@@ -30,6 +30,6 @@ jobs:
           BSKY_HANDLE: ${{ secrets.BSKY_HANDLE }}
           BSKY_APP_PASSWORD: ${{ secrets.BSKY_APP_PASSWORD }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          GEMINI_MODEL_NAME: 'gemini-3.5-flash-latest'
+          GEMINI_MODEL_NAME: 'gemini-flash-lite-latest'
         run: |
           python ai_news_bluesky.py

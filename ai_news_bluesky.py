@@ -22,7 +22,7 @@ if not all([BSKY_HANDLE, BSKY_APP_PASSWORD, GEMINI_API_KEY]):
 # Gemini API の設定（バージョンに依存しない latest 系のモデルを指定）
 genai.configure(api_key=GEMINI_API_KEY)
 # 必要に応じて gemini-1.5-flash-latest または gemini-1.5-flash を指定
-GEMINI_MODEL_NAME = os.getenv('GEMINI_MODEL_NAME', 'gemini-3.5-flash-latest')
+GEMINI_MODEL_NAME = os.getenv('GEMINI_MODEL_NAME', 'gemini-flash-lite-latest')
 
 SYSTEM_PROMPT = """
 下記のニュースについて日本語で40文字程度で感想を述べて。若い女性目線で。今風な語彙の話し言葉で。適切な短文のツイート内容で。承知しましたは不要。
